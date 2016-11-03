@@ -2,7 +2,11 @@
 
 .testbranch{}
 .testbranch2{}
+<<<<<<< HEAD
 .testbranchc{}
+=======
+.testbranch3333{}
+>>>>>>> refs/remotes/origin/master
 body {
 	/*opacity: .5;*/
 	/*background-image: url('../mobile-form.png');*/	
@@ -11,6 +15,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 
 }
+
+.testmaster {}
 
 header {
 
