@@ -2,7 +2,11 @@
 
 .testbranch{}
 .testbranch2{}
+<<<<<<< HEAD
 .testbranch3333{}
+=======
+.testbranchc{}
+>>>>>>> refs/remotes/origin/testbranch
 body {
 	/*opacity: .5;*/
 	/*background-image: url('../mobile-form.png');*/	
