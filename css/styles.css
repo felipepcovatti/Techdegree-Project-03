@@ -2,14 +2,14 @@
 
 body {
 	/*opacity: .5;*/
-	/*background-image: url('../mobile-form.png');*/	
+	/*background-image: url('../../mobile-form.png');*/	
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
 
+
 }
 
-.testmaster {}
 
 header {
 
@@ -17,11 +17,16 @@ header {
 
 }
 
-
-header, main, footer {
-	padding-right:15px;
-	padding-left: 15px;
+header, footer {
+	width: 100%;
 }
+
+main {
+	margin: 0 auto;
+	width: calc(100% - 30px);
+
+}
+
 
 
 h1, h2, main p:first-of-type, footer p {
