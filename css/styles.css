@@ -203,6 +203,12 @@ textarea  {
 }
 
 
+input:hover, select:hover,
+textarea:hover {
+	box-shadow: 0px 0px 1px 1px #2d3943;
+}
+
+
 input:focus, select:focus, 
 input[type="checkbox"]:checked + label span:before,
 input[type="radio"]:checked + label span:before,
@@ -320,32 +326,60 @@ input[type="radio"] + label span:after {
 }
 
 
+/*Hide spinners in number type input*/
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 /*Placeholder styling*/
 
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+
   transition: all .4s;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+
   transition: all .4s;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+
   transition: all .4s;
 }
 :-moz-placeholder { /* Firefox 18- */
+
+  transition: all .4s;
+}
+
+
+input[required]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+}
+
+input[required]::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+}
+input[required]:-ms-input-placeholder { /* IE 10+ */
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+}
+input[required]:-moz-placeholder { /* Firefox 18- */
     text-align: right;
   font-style: italic;
   font-size: .8em;
-  transition: all .4s;
 }
 
 

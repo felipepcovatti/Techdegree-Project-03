@@ -113,6 +113,18 @@
                     <label for="Javascript_news"><span>Javascript News</span></label>
 
 
+                    <label class="toplabel">How offen would you like to recieve our news?</label>
+
+                    <input type="radio" name="frequency" value="daily_news" id="daily_news">
+                    <label for="daily_news"><span>Daily</span></label>
+
+                    <input type="radio" name="frequency" value="weekly_news" id="weekly_news">
+                    <label for="weekly_news"><span>Weekly</span></label>
+
+                    <input type="radio" name="frequency" value="monthly_news" id="monthly_news">
+                    <label for="monthly_news"><span>Monthly</span></label> 
+
+
                     <label class="toplabel">Newsletter format</label>
 
                     <input type="radio" name="news_format" value="HTML_format" id="HTML_format">
@@ -122,7 +134,10 @@
                     <label for="Plain_text_format"><span>Plain text</span></label>
 
                     <label class="toplabel" for="other_topics">Other topics you'd like to hear about</label>
-                    <textarea name="other_topics" id="other_topics"></textarea>
+                    <textarea name="other_topics" id="other_topics" placeholder="Enter your message here"></textarea>
+
+                    <input type="checkbox" name="promo_email" value="promo_email" id="promo_email" checked>
+                    <label for="promo_email"><span>I want to recieve promotional emails as well.</span></label>
 
                 </div>
             </fieldset>
