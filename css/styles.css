@@ -1,362 +1,344 @@
 /*Basic rules*/
 
 body {
-	background-size: contain;
-	background-repeat: no-repeat;
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
 
 header {
-	display: flex;
-	align-items: center;
-	min-height: 70px;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    justify-content: center;
 }
 
-header, footer {
-	width: 100%;
+header,
+footer {
+    width: 100%;
 }
 
-h1, main {
-	margin: 0 auto;
-	width: calc(100% - 30px);
+h1,
+main {
+    margin: 0 auto;
+    width: calc(100% - 30px);
 }
 
-
-
-h1, h2, main p:first-of-type, footer p {
-	text-align: center;
+h1,
+h2,
+main p:first-of-type,
+footer p {
+    text-align: center;
 }
 
 footer p {
-	padding-top: 12px;
-	font-size: .9em;
-	font-style: italic;
-	font-weight: 300;
+    padding-top: 12px;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: 300;
 }
 
 footer {
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 main p:first-of-type {
-	font-size: .9em;
-	border-bottom: 4px solid #2d3943;
-	padding-bottom: 36px;
-	margin-bottom: 3px;
+    font-size: .9em;
+    border-bottom: 4px solid #2d3943;
+    padding-bottom: 36px;
+    margin-bottom: 3px;
 }
 
-
 h1 {
-
-	text-transform: uppercase;
-	text-align: center;	
-	font-weight: 700;
-	font-size: 1.3em;
-	color: #e9e9e9;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #e9e9e9;
 }
 
 h2 {
-
-	margin-top: 26px;
-	margin-bottom: 0;
+    margin-top: 26px;
+    margin-bottom: 0;
 }
 
 hr {
-	border: none;
-	height: 2px;
-	margin: 0;
-	
+    border: none;
+    height: 2px;
+    margin: 0;
 }
 
-h2, legend  {
-	font-size: 1.2em;
+h2,
+legend {
+    font-size: 1.2em;
 }
 
 button {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 i {
-	padding-right: 11px;
+    padding-right: 11px;
 }
 
 /*Form elements specific rules*/
 
 fieldset {
-	margin:0;
-	margin-bottom: 13px;
-	padding:0;
-	padding-top:20px;
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0;
+    padding-top: 20px;
 }
 
 legend {
-	font-weight: 700;
-	padding-top: 27px;
+    font-weight: 700;
+    padding-top: 27px;
 }
 
-form, fieldset div {
-	display: flex;
-	flex-direction: column;
+form,
+fieldset div {
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 label {
-	line-height: 1.5em;
-	padding-right: 10px
+    line-height: 1.5em;
+    padding-right: 10px
 }
 
-input, select, textarea, button {
-
-	width: 100%;
-	margin:9px 0 15px;
-	min-height: 49px;
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    margin: 9px 0 15px;
+    min-height: 49px;
     padding: 0 20px;
 }
 
 option {
-	min-height: 47px;
+    min-height: 47px;
 }
 
 .select_div {
-	position: relative;
+    position: relative;
 }
-
 
 i.fa-caret-down {
-	position: absolute;
-	right: 6px;
-	bottom: 32px;
-	padding-right: 0;
+    position: absolute;
+    right: 6px;
+    bottom: 32px;
+    padding-right: 0;
 }
-
 
 select {
-	-webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-fieldset, input, select, textarea, button {
-	border: none;
+select::-ms-expand {
+    display: none;
 }
 
-input, select, textarea, label {
-	box-sizing: border-box;
+fieldset,
+input,
+select,
+textarea,
+button {
+    border: none;
 }
 
-
+input,
+select,
+textarea,
+label {
+    box-sizing: border-box;
+}
 
 input[name="zip_code"] {
-	max-width: 50%;
+    max-width: 50%;
 }
 
 div.newsletter_info div {
-	flex-direction: row;
+    flex-direction: row;
 }
 
 .newsletter_info label {
-	line-height: 2em;
-	max-width: calc(100% - 18px)
-
+    line-height: 2em;
+    max-width: calc(100% - 18px)
 }
 
 .newsletter_info input {
-	flex-basis: 18px;
-	flex-basis: 18px;
-
-} 
+    flex-basis: 18px;
+    flex-basis: 18px;
+}
 
 .newsletter_info label.toplabel {
-
-	padding-left: 0;
-	padding-right: 0;
-	margin-bottom: 7px;
-	line-height: 1.5em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 7px;
+    line-height: 1.5em;
 }
 
 .newsletter_info label.toplabel:nth-of-type(n + 2) {
-
-	margin-top: 17px;
-
+    margin-top: 17px;
 }
 
-
-
 textarea {
-	padding-top: 15px;
-	padding-bottom: 8px;
-	min-height: 100px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    min-height: 100px;
 }
 
 button {
-	min-height: 60px;
-	background: #55c8b3;
-	color: white;
-
+    min-height: 60px;
+    background: #55c8b3;
+    color: white;
 }
 
 button:hover {
-	filter: brightness(1.15);
+    filter: brightness(1.15);
 }
 
-input, select, 
+input,
+select,
 input[type="checkbox"] + label span:before,
-textarea, button  {
-
-	border-radius: .3em;
-
+textarea,
+button {
+    border-radius: .3em;
 }
 
-input, select, 
+input,
+select,
 input[type="checkbox"] + label span:before,
 input[type="radio"] + label span:before,
-textarea  {
-
-	background: #e4e4e4;
-	
+textarea {
+    background: #e4e4e4;
 }
 
-input:hover, select:hover,
+input:hover,
+select:hover,
 textarea:hover {
-	box-shadow: 0px 0px 1px 1px #2d3943;
+    box-shadow: 0px 0px 1px 1px #2d3943;
 }
 
 select:hover + i {
-	color:#2d3943;
+    color: #2d3943;
 }
 
-
-input:focus, select:focus, 
+input:focus,
+select:focus,
 input[type="checkbox"]:checked + label span:before,
 input[type="radio"]:checked + label span:before,
-textarea:focus  {
-	outline: 0;
-	box-shadow: 0px 0px 2px 2px #2d3943;
+textarea:focus {
+    outline: 0;
+    box-shadow: 0px 0px 2px 2px #2d3943;
 }
-
-
-
 
 /*Checkbox & Radio buttons specific rules*/
 
-
-
-input[type="checkbox"], input[type="radio"] {
-	
-	margin: 0;
-	padding: 0;
-	min-height: 0;
-	opacity: 0;
-	z-index: 999;
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    opacity: 0;
+    z-index: 999;
 }
 
-input[type="checkbox"] + label, 
+input[type="checkbox"] + label,
 input[type="radio"] + label {
-
-	position: relative;
-	padding-left: 11px;
+    position: relative;
+    padding-left: 11px;
 }
-
 
 input[type="checkbox"] + label span:before,
 input[type="checkbox"]:checked + label span:after,
 input[type="checkbox"] + label span:after,
 input[type="radio"] + label span:before {
-
-	position: absolute;
-
+    position: absolute;
 }
-
-
 
 input[type="checkbox"] + label span:before,
 input[type="radio"] + label span:before,
-input[type="checkbox"] + label span:after  {
-
-	left: -18px;
-	content:"";
-	width: 18px;
-	height: 18px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-
+input[type="checkbox"] + label span:after {
+    left: -18px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
 }
 
 input[type="checkbox"] + label span:after {
-
-	content: "";
-	font-weight: 700;
-	opacity: 0;
-	text-align: center;
-	line-height: 1em;
-
+    content: "";
+    font-weight: 700;
+    opacity: 0;
+    text-align: center;
+    line-height: 1em;
 }
 
-
 input[type="checkbox"]:checked + label span:after {
-
-	content: "\2714";
-	opacity: 1;
-
-
+    content: "\2714";
+    opacity: 1;
 }
 
 input[type="radio"] + label span:before {
-	border-radius: 1em;
-	box-sizing: border-box;
-	border: 4px solid rgba(45, 57, 67, 0);
-
+    border-radius: 1em;
+    box-sizing: border-box;
+    border: 4px solid rgba(45, 57, 67, 0);
 }
 
 input[type="radio"]:checked + label span:before {
-	border: 4px solid #e4e4e4;
+    border: 4px solid #e4e4e4;
 }
 
 /*Shared color*/
 
 main p:first-of-type,
-input, select, textarea, footer p, i.fa-caret-down {
-	color: #5f5f5f;
+input,
+select,
+textarea,
+footer p,
+i.fa-caret-down {
+    color: #5f5f5f;
 }
 
-h2, legend, label,
+h2,
+legend,
+label,
 input[type="checkbox"] + label span:after {
-
-	color: #2d3943;
+    color: #2d3943;
 }
-
 
 /*Shared background color*/
 
 input[type="radio"]:checked + label span:before,
-header, hr {
-	background-color: #2d3943;
-} 
-
-
+header,
+hr {
+    background-color: #2d3943;
+}
 
 /*Transition*/
 
-
-input, select, textarea, button, i,
+input,
+select,
+textarea,
+button,
+i,
 input[type="checkbox"] + label span:before,
 input[type="checkbox"] + label span:after,
 input[type="radio"] + label span:before,
 input[type="radio"] + label span:after {
-	transition: all .4s;
+    transition: all .4s;
 }
-
 
 /*Hide spinners in number type input*/
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="number"] {
@@ -365,152 +347,165 @@ input[type="number"] {
 
 /*Placeholder styling*/
 
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-
-  transition: all .4s;
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    
+    transition: all .4s;
 }
 
-::-moz-placeholder { /* Firefox 19+ */
-
-  transition: all .4s;
-}
-:-ms-input-placeholder { /* IE 10+ */
-
-  transition: all .4s;
-}
-:-moz-placeholder { /* Firefox 18- */
-
-  transition: all .4s;
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    transition: all .4s;
 }
 
-
-input[required]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+:-ms-input-placeholder {
+    /* IE 10+ */
+    
+    transition: all .4s;
 }
 
-input[required]::-moz-placeholder { /* Firefox 19+ */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    transition: all .4s;
 }
-input[required]:-ms-input-placeholder { /* IE 10+ */
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
-}
-input[required]:-moz-placeholder { /* Firefox 18- */
+
+input[required]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    
     text-align: right;
-  font-style: italic;
-  font-size: .8em;
+    font-style: italic;
+    font-size: .8em;
 }
 
+input[required]::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    text-align: right;
+    font-style: italic;
+    font-size: .8em;
+}
+
+input[required]:-ms-input-placeholder {
+    /* IE 10+ */
+    
+    text-align: right;
+    font-style: italic;
+    font-size: .8em;
+}
+
+input[required]:-moz-placeholder {
+    /* Firefox 18- */
+    
+    text-align: right;
+    font-style: italic;
+    font-size: .8em;
+}
 
 :focus::-webkit-input-placeholder {
-	opacity: 0;
+    opacity: 0;
 }
+
 :focus::-moz-placeholder {
-	opacity: 0;
+    opacity: 0;
 }
+
 :focus:-ms-input-placeholder {
-	opacity: 0;
+    opacity: 0;
 }
-:focus:-moz-placeholder; {
-	opacity: 0;
+
+:focus:-moz-placeholder {
+    opacity: 0;
 }
 
 @media (min-width: 768px) {
-	h1, main {
-		width: calc(100% - 280px);
-	}
-	h2 {
-		margin-top: 40px;
-		font-size: 1.25em;
-	}
+    h1,
+    main {
+        width: calc(100% - 280px);
+    }
 
+    h2 {
+        margin-top: 40px;
+        font-size: 1.25em;
+    }
 
-	main p:first-of-type {
-		padding-bottom: 40px;
-	}
+    main p:first-of-type {
+        padding-bottom: 40px;
+    }
 
-	legend {
-		padding-top: 35px;
-	}
+    legend {
+        padding-top: 35px;
+    }
 
-	div label.toplabel:first-of-type {
-		margin-top: 5px;
+    div label.toplabel:first-of-type {
+        margin-top: 5px;
+    }
 
-	}
+    fieldset {
+        padding-top: 12px;
+        margin-bottom: 38px;
+    }
 
-	fieldset {
-		padding-top: 12px;
-		margin-bottom: 38px;
-	}
+    fieldset:last-of-type {
+        margin-bottom: 0px;
+    }
 
+    fieldset div.contact_info div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-	fieldset:last-of-type {
-		margin-bottom: 0px;
-	}
+    fieldset div.contact_info div label {
+        width: 25%;
+    }
 
-	fieldset div.contact_info div {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-	}
+    fieldset div.contact_info div label {
+        width: 25%;
+    }
 
-	fieldset div.contact_info div label {
-		width: 25%;
-	}
+    fieldset div.contact_info div.zip_code {
+        justify-content: flex-start;
+    }
 
+    input,
+    select {
+        width: 75%;
+        margin: 11px 0;
+    }
 
-	fieldset div.contact_info div label {
-		width: 25%;
-	}
+    input[name="zip_code"] {
+        width: 37.5%;
+    }
 
-	fieldset div.contact_info div.zip_code {
-		justify-content: flex-start;
-	}
-
-	input, select {
-		width: 75%;
-		margin: 11px 0; 
-	}
-
-	input[name="zip_code"] {
-		width: 37.5%;
-	}
-
-	i.fa-caret-down {
-		bottom: 28px;
-	}
-
+    i.fa-caret-down {
+        bottom: 28px;
+    }
 
 }
 
 @media (min-width: 1024px) {
+    h1,
+    main {
+        width: calc(100% - 600px)
+    }
 
+    h2 {
+        margin-top: 65px;
+        font-size: 1.5em;
+    }
 
-	h1, main {
-		width: calc(100% - 600px)
-	}
+    main p:first-of-type {
+        padding-bottom: 46px;
+    }
 
-	h2 {
-		margin-top: 65px;
-		font-size: 1.5em;
-	}
+    legend {
+        padding-top: 45px;
+    }
 
-	main p:first-of-type {
-	padding-bottom: 46px;
-	}
+    div label.toplabel:first-of-type {
+        margin-top: 10px;
+    }
 
-	legend {
-	padding-top: 45px;
-	}
-
-	div label.toplabel:first-of-type {
-		margin-top: 10px;
-
-	}
 }
