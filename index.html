@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Registration Form</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700" rel="stylesheet">
 </head>
@@ -18,7 +19,7 @@
         <form action="" method="post">
             <hr>
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend><i class="fa fa-user" aria-hidden="true"></i>Contact Information</legend>
                 <div class="contact_info">
                     <label for="name">Full Name</label>
                     <input type="text" name="name" id="name" required placeholder="Required">
@@ -99,45 +100,51 @@
             </fieldset>
             <hr>
             <fieldset>
-                <legend>Newsletter</legend>
+                <legend><i class="fa fa-envelope" aria-hidden="true"></i>Newsletter</legend>
                 <div class="newsletter_info">
                     <label class="toplabel">Select the newsletters you would like to recieve</label>
-
-                    <input type="checkbox" name="news_type" value="HTML_news" id="HTML_news">
-                    <label for="HTML_news"><span>HTML News</span></label>
-
-                    <input type="checkbox" name="news_type" value="CSS_news" id="CSS_news">
-                    <label for="CSS_news"><span>CSS News</span></label>
-
-                    <input type="checkbox" name="news_type" value="Javascript_news" id="Javascript_news">
-                    <label for="Javascript_news"><span>Javascript News</span></label>
-
+                    <div>
+                        <input type="checkbox" name="news_type" value="HTML_news" id="HTML_news">
+                        <label for="HTML_news"><span>HTML News</span></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="news_type" value="CSS_news" id="CSS_news">
+                        <label for="CSS_news"><span>CSS News</span></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="news_type" value="Javascript_news" id="Javascript_news">
+                        <label for="Javascript_news"><span>Javascript News</span></label>
+                    </div>
 
                     <label class="toplabel">How offen would you like to recieve our news?</label>
-
-                    <input type="radio" name="frequency" value="daily_news" id="daily_news">
-                    <label for="daily_news"><span>Daily</span></label>
-
-                    <input type="radio" name="frequency" value="weekly_news" id="weekly_news">
-                    <label for="weekly_news"><span>Weekly</span></label>
-
-                    <input type="radio" name="frequency" value="monthly_news" id="monthly_news">
-                    <label for="monthly_news"><span>Monthly</span></label> 
-
+                    <div>
+                        <input type="radio" name="frequency" value="daily_news" id="daily_news">
+                        <label for="daily_news"><span>Daily</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="frequency" value="weekly_news" id="weekly_news">
+                        <label for="weekly_news"><span>Weekly</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="frequency" value="monthly_news" id="monthly_news">
+                        <label for="monthly_news"><span>Monthly</span></label> 
+                    </div>
 
                     <label class="toplabel">Newsletter format</label>
-
-                    <input type="radio" name="news_format" value="HTML_format" id="HTML_format">
-                    <label for="HTML_format"><span>HTML</span></label>
-
-                    <input type="radio" name="news_format" value="Plain_text_format" id="Plain_text_format">
-                    <label for="Plain_text_format"><span>Plain text</span></label>
-
-                    <label class="toplabel" for="other_topics">Other topics you'd like to hear about</label>
-                    <textarea name="other_topics" id="other_topics" placeholder="Enter your message here"></textarea>
-
-                    <input type="checkbox" name="promo_email" value="promo_email" id="promo_email" checked>
-                    <label for="promo_email"><span>I want to recieve promotional emails as well.</span></label>
+                    <div>
+                        <input type="radio" name="news_format" value="HTML_format" id="HTML_format">
+                        <label for="HTML_format"><span>HTML</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="news_format" value="Plain_text_format" id="Plain_text_format">
+                        <label for="Plain_text_format"><span>Plain text</span></label>
+                    </div>
+                        <label class="toplabel" for="other_topics">Other topics you'd like to hear about</label>
+                        <textarea name="other_topics" id="other_topics" placeholder="Enter your message here"></textarea>
+                    <div>
+                        <input type="checkbox" name="promo_email" value="promo_email" id="promo_email" checked>
+                        <label for="promo_email"><span>I want to recieve promotional emails as well.</span></label>
+                    </div>
 
                 </div>
             </fieldset>
